@@ -1,0 +1,80 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.8",
+    "version": "1.0.0",
+    "id": "028904fa-6acc-4ac2-be22-a8d92805027b",
+    "packageName": "com.microsoft.teams.extension",
+    "developer": {
+        "name": "PROGED",
+        "websiteUrl": "https://www.progedsolutions.com",
+        "privacyUrl": "https://www.progedsolutions.com/services/",
+        "termsOfUseUrl": "https://www.progedsolutions.com/contact/"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "PROBOT",
+        "full": ""
+    },
+    "description": {
+        "short": "Un ChatBot de support",
+        "full": "Un ChatBot qui va faciliter les demandes d'assistances"
+    },
+    "accentColor": "#FFFFFF",
+    "bots": [
+        {
+            "botId": "8e9023d4-e153-4106-84a7-eaff575c50dd",
+            "scopes": [
+                "personal",
+                "groupchat",
+                "team"
+            ],
+            "commandLists": [
+                {
+                    "scopes": [
+                        "personal"
+                    ],
+                    "commands": [
+                        {
+                            "title": "Menu",
+                            "description": "ouvrir le menu"
+                        }
+                    ]
+                },
+                {
+                    "scopes": [
+                        "team"
+                    ],
+                    "commands": [
+                        {
+                            "title": "Menu",
+                            "description": "ouvrir le menu"
+                        }
+                    ]
+                },
+                {
+                    "scopes": [
+                        "groupchat"
+                    ],
+                    "commands": [
+                        {
+                            "title": "Menu",
+                            "description": "ouvrir le menu"
+                        }
+                    ]
+                }
+            ],
+            "supportsFiles": true,
+            "isNotificationOnly": false
+        }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "localhost:3000"
+    ]
+}
